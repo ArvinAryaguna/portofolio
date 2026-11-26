@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arvin Aryaguna | Portofolio</title>
+  <meta name="description" content="Portfolio of Arvin Aryaguna, information systems master’s graduate focused on data analytics and NLP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">Arvin Aryaguna</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">Menu</button>
+    <nav id="navLinks" class="links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#more">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Arvin Aryaguna</h1>
+        <p class="lead" style="text-align: justify; hyphens: auto;">Information Systems Master’s graduate who turns messy data and business questions into measurable, data-driven answers.</p>
+        <p class="sub">Data analytics · NLP · Database design</p>
+        <div class="actions">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="models">
+        <figcaption>Sentiment models I’ve built</figcaption>
+        <div class="bar">
+          <div class="bar-top"><span>Indonesian e-commerce reviews<small>Decision Tree, 77,000+ reviews</small></span><b>90.15%</b></div>
+          <div class="track"><i style="--v:90.15%"></i></div>
+        </div>
+        <div class="bar">
+          <div class="bar-top"><span>Education policy posts on X<small>Multinomial Naïve Bayes, 10,000+ posts</small></span><b>76.58%</b></div>
+          <div class="track"><i style="--v:76.58%"></i></div>
+        </div>
+        <p class="note">Accuracy on each project’s test data.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <div class="wrap narrow" style="text-align: justify;">
+      <h2 style="display: flex; justify-content: center;">About Me</h2>
+      <p>I hold a Master’s degree in Information Systems Management and a Bachelor’s degree in Computer Science, both from Bina Nusantara University, and I’ve worked as an Application Developer.</p>
+      <p>My experience covers data analytics, database design, UML, NLP, and machine learning, drawn from professional, academic, and research projects. I’m eager to design information systems and translate business requirements into effective, measurable solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt reveal">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="cards" id="projectList"></div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="wrap narrow">
+      <h2>Experience and Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2024 – 2026</span>
+          <h3>Master of Information System Management</h3>
+          <p>Bina Nusantara University · GPA 3.95</p>
+        </li>
+        <li>
+          <span class="when">2022 – 2023</span>
+          <h3>Application Developer</h3>
+          <p>Bina Nusantara University</p>
+          <ul style="text-align: justify;">
+            <li>Built a sentiment analysis model for Indonesian e-commerce reviews with a Decision Tree, reaching 90.15% accuracy on 77,000+ reviews.</li>
+            <li>Cleaned and analyzed the review texts with pandas and NLTK to prepare a dataset for training and evaluation.</li>
+            <li>Documented the work and presented findings to a supervisor and peers in an academic report.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="when">2019 – 2023</span>
+          <h3>Bachelor of Computer Science</h3>
+          <p>Bina Nusantara University · GPA 3.42</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt reveal">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Programming and tools</h3><ul class="chips"><li>Python</li><li>MySQL</li><li>Google Colab</li><li>Visual Studio Code</li></ul></div>
+        <div><h3>Machine learning</h3><ul class="chips"><li>Natural Language Processing</li><li>Sentiment Analysis</li></ul></div>
+        <div><h3>Systems and database</h3><ul class="chips"><li>ERD</li><li>Database Design</li><li>UML Modeling</li></ul></div>
+        <div><h3>Productivity</h3><ul class="chips"><li>Excel / Google Sheets</li><li>Word</li><li>PowerPoint</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="more" class="section reveal">
+    <div class="wrap two">
+      <div>
+        <h2>Certifications</h2>
+        <h3>Mini Course Data Analytics</h3>
+        <p>RevoU · October 2026<br>Data analytics fundamentals and the end-to-end analysis process.</p>
+        <h3>Introduction to SQL</h3>
+        <p>Sololearn · June 2023<br>Data filtering, aggregate functions, and data manipulation.</p>
+      </div>
+      <div>
+        <h2>Volunteering</h2>
+        <h3>Teach for Indonesia</h3>
+        <p>Took part in parenting-themed social activities organized by Binus University with 27,846 volunteers, and co-authored a case study on how parenting styles influence children’s mental health.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" class="section alt reveal">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Contact</h2>
+      <p>Have an opportunity or a question? Send me a message and I’ll get back to you.</p>
+      <div class="actions">
+        <a class="btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=arvin.aryaguna11@gmail.com&amp;su=Portfolio%20inquiry" target="_blank" rel="noopener">Send email</a>
+        <a class="btn ghost" href="https://linkedin.com/in/arvin-aryaguna" target="_blank" rel="noopener">View LinkedIn profile</a>
+      </div>
+      <p class="meta">arvin.aryaguna11@gmail.com<br>Bekasi, West Java</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot" style="display: flex; justify-content: center;">
+    <span>©<span id="year"></span>Arvin Aryaguna</span>
+  </div>
+</footer>
+
+</body>
+</html>
